@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+    <title>BD Emisión</title>
+    <meta content="" name="description">F192
+    <meta content="" name="keywords">
+
+    <!-- Favicons -->
+    <link href="assets/img/profile-img.jpg" rel="icon">
+    <link href="assets/img/profile-img.jpg" rel="apple-touch-icon">
+
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+        rel="stylesheet">
+
+    <!-- Vendor CSS Files -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+
+    <!--Datatable v1.13.4-->
+    <link href="https://cdn.datatables.net/1.13.4/css/jquery.dataTables.min.css" rel="stylesheet" />
+    <link href="https://cdn.datatables.net/buttons/2.3.6/css/buttons.dataTables.min.css" rel="stylesheet" />
+
+</head>
+
+<body>
+
+    <!-- ======= Mobile nav toggle button ======= -->
+    <i class="bi bi-list mobile-nav-toggle d-xl-none"></i>
+
+    <!-- ======= Header ======= -->
+    <header id="header">
+        <!-- ======= Menú ======= -->
+        <div id="menu"></div>
+        <!-- ======= End Menú ======= -->
+    </header><!-- End Header -->
+
+
+    <main id="main">
+
+        <!-- ======= Totalizador ======= -->
+        <div id="totalizador"></div>
+        <!-- ======= End Totalizador ======= -->
+
+        <!-- ======= Cierre Actual Por Servicios ======= -->
+        <div id="cierre_actual_x_servicios"></div>
+        <!-- ======= End Cierre Actual Por Servicios ======= -->
+
+        <!-- ======= Cierre Actual Por Promo ======= -->
+        <div id="cierre_actual_x_promo"></div>
+        <!-- ======= End Cierre Actual Por Promo ======= -->
+
+        <!-- ======= Modal Verificar Rutas ======= -->
+        <div id="modalVerificarRutas"></div>
+        <!-- ======= End Modal Verificar Rutas ======= -->
+
+        <!-- ======= Modal Uploader Bajas ======= -->
+        <div id="modalUploaderBajas"></div>
+        <!-- ======= End Modal Uploader Bajas ======= -->
+
+    </main><!-- End #main -->
+
+    <!-- ======= Footer ======= -->
+    <div id="footer"></div>
+    <!-- End  Footer -->
+
+    <a href="#" class="back-to-top d-flex align-items-center justify-content-center">
+        <i class="bi bi-arrow-up-short"></i>
+    </a>
+
+
+    <!--JQuery v3.7.0-->
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"
+        integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+
+    <!--Bootstrap.min.js v5.3.0-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"
+        integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
+
+
+
+    <!--SweetAlert2 v11-->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <!--Datatable v1.13.4-->
+    <script src="https://cdn.datatables.net/1.13.4/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.datatables.net/buttons/2.3.6/js/dataTables.buttons.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.1.3/jszip.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.53/pdfmake.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.53/vfs_fonts.js"></script>
+    <script src="https://cdn.datatables.net/buttons/2.3.6/js/buttons.html5.min.js"></script>
+    <script src="https://cdn.datatables.net/buttons/2.3.6/js/buttons.print.min.js"></script>
+
+    <!-- Template Main JS File -->
+    <script src="assets/js/config.js"></script>
+
+    <script>
+        loadStyles();
+        loadStylesVendor(); //Cargo los estilos en el head
+        loadScriptsVendor();
+        loadScripts(); //Cargo los scripts en el body
+    </script>
+
+</body>
+
+</html>

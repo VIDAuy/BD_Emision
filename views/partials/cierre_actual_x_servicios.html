@@ -1,0 +1,46 @@
+<!-- ======= Cierre_Actual_Por_Servicios Section ======= -->
+<section id="cierre_actual_por_servicios" class="cierre_actual_por_servicios">
+  <div class="container">
+    <div class="section-title">
+      <h2>Cierre actual por servicios</h2>
+    </div>
+
+    <div class="row">
+      <div class="col-lg-12" data-aos="fade-right">
+        <div class="table-responsive">
+          <table
+            id="tabla_abmActual_x_servicios"
+            class="display"
+            style="width: 100%"
+          >
+            <thead class="bg-dark text-white">
+              <tr>
+                <th>Nro. Servicio</th>
+                <th>Servicio</th>
+                <th>Cantidad</th>
+              </tr>
+            </thead>
+            <tbody class="table-bordered table-striped-columns"></tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End Cierre_Actual_Por_Servicios Section -->
+
+<script>
+  $("#tabla_abmActual_x_servicios").DataTable({
+    ajax: "http://192.168.1.16:82/BD_Emision/php/ajax/cierre_actual_x_servicios.php",
+    columns: [
+      { data: "id_servicio" },
+      { data: "servicio" },
+      { data: "cantidad" },
+    ],
+    order: [[0, "asc"]],
+    bDestroy: true,
+    language: { url: "//cdn.datatables.net/plug-ins/1.13.4/i18n/es-ES.json" },
+    dom: "Bfrtip",
+    buttons: ["excel"],
+  });
+</script>
