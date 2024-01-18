@@ -4,7 +4,7 @@
  Source Server         : 250
  Source Server Type    : MySQL
  Source Server Version : 50626 (5.6.26)
- Source Host           : 192.168.1.16:3306
+ Source Host           : 192.168.1.250:3306
  Source Schema         : bd_emision
 
  Target Server Type    : MySQL

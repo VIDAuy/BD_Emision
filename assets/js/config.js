@@ -2,7 +2,7 @@ const PRODUCCION = true;
 
 const version = "1.0.7";
 const PROTOCOLO = "http";
-const SERVER = "192.168.1.16:82";
+const SERVER = "192.168.1.250:82";
 const NAME_APP = "BD_Emision";
 
 //URLs

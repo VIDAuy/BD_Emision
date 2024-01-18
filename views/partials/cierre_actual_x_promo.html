@@ -31,7 +31,7 @@
 
 <script>
   $("#tabla_abmActual_x_promo").DataTable({
-    ajax: "http://192.168.1.16:82/BD_Emision/php/ajax/cierre_actual_x_promo.php",
+    ajax: "http://192.168.1.250:82/BD_Emision/php/ajax/cierre_actual_x_promo.php",
     columns: [{ data: "cod_promo" }, { data: "promo" }, { data: "cantidad" }],
     order: [[0, "asc"]],
     bDestroy: true,

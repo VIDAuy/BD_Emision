@@ -38,16 +38,16 @@ include_once "funciones.php";
 include_once "utils.php";
 
 
-//DB PROD192.168.1.16
-const DB_ABMMOD_PROD         = array("host" => "192.168.1.16", "user" => "root", "password" => "sist.2k8", "db" => "abmmod");
-const DB_CRM_PROD            = array("host" => "192.168.1.16", "user" => "root", "password" => "sist.2k8", "db" => "crm");
-const DB_BD_EMISION_PROD     = array("host" => "192.168.1.16", "user" => "root", "password" => "sist.2k8", "db" => "bd_emision");
+//DB PROD
+const DB_ABMMOD_PROD         = array("host" => "192.168.1.250", "user" => "root", "password" => "sist.2k8", "db" => "abmmod");
+const DB_CRM_PROD            = array("host" => "192.168.1.250", "user" => "root", "password" => "sist.2k8", "db" => "crm");
+const DB_BD_EMISION_PROD     = array("host" => "192.168.1.250", "user" => "root", "password" => "sist.2k8", "db" => "bd_emision");
 //const DB_COORDINACION_PROD = array("host" => "192.168.250.11", "user" => "root", "password" => "sist.2k8", "db" => "coordinacion");
 
-//DB TEST192.168.1.16
-const DB_ABMMOD_TEST         = array("host" => "192.168.1.16", "user" => "root", "password" => "sist.2k8", "db" => "abmmod");
-const DB_CRM_TEST            = array("host" => "192.168.1.16", "user" => "root", "password" => "sist.2k8", "db" => "crm");
-const DB_BD_EMISION_TEST     = array("host" => "192.168.1.16", "user" => "root", "password" => "sist.2k8", "db" => "bd_emision");
+//DB TEST
+const DB_ABMMOD_TEST         = array("host" => "192.168.1.250", "user" => "root", "password" => "sist.2k8", "db" => "abmmod");
+const DB_CRM_TEST            = array("host" => "192.168.1.250", "user" => "root", "password" => "sist.2k8", "db" => "crm");
+const DB_BD_EMISION_TEST     = array("host" => "192.168.1.250", "user" => "root", "password" => "sist.2k8", "db" => "bd_emision");
 //const DB_COORDINACION_TEST = array("host" => "192.168.250.11", "user" => "root", "password" => "sist.2k8", "db" => "coordinacion");
 
 //DB PROD O TEST
