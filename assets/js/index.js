@@ -14,6 +14,7 @@ $(document).ready(async function () {
   }
 
   Totalizadores();
+  setInterval(Totalizadores, 60000);
 
 });
 
@@ -54,10 +55,17 @@ function cerrar_sesion() {
 
 
 function Totalizadores() {
+
   $.ajax({
     type: "GET",
     url: `${url_app_ajax}/totalizadores.php`,
     dataType: "JSON",
+    beforeSend: function () {
+      Contador("totalizador1", 0);
+      Contador("totalizador2", 0);
+      Contador("totalizador3", 0);
+      Contador("totalizador4", 0);
+    },
     success: function (response) {
       if (response.error === false) {
         let array = response.cantidades;

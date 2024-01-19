@@ -6,7 +6,7 @@ date_default_timezone_set('America/Montevideo');
 
 define("PATH_APP", __DIR__);
 
-const PRODUCCION = true; // para definir si es test o produccion la APP
+const PRODUCCION = false; // para definir si es test o produccion la APP
 
 error_reporting(PRODUCCION ? 0 : E_ALL);
 
@@ -72,6 +72,7 @@ const TABLA_BAJAS                    = "bajas";
 const TABLA_HISTORIAL_LOGS           = "historial_logs";
 const TABLA_LOGS_CORRECTOS           = "logs_correctos";
 const TABLA_LOGS_ERRORES             = "logs_errores";
+const TABLA_REGISTROS                = "registros";
 
 
 
