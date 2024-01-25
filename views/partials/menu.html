@@ -18,21 +18,29 @@
         <ul>
             <li>
                 <button class="nav-link scrollto active item_menu"
-                    onclick='cargar_en_div("todos", "contenedor_principal")'>
+                    onclick='cargar_en_div("todos", "contenedor_principal")' title="Volver a inicio">
                     <i class="bx bx-home"></i>
                     <span>Inicio</span>
                 </button>
-                <button class="nav-link scrollto active item_menu" onclick="openModal_ModificarRutas()">
+                <button class="nav-link scrollto active item_menu tooltiptext" onclick="openModal_ModificarRutas()"
+                    title="Botón que abre una ventana que contiene una tabla. A su vez, se ejecuta una función que recorre el padron datos socios verificando que la ruta tenga si o si 10 dígitos, y si hay de menos dígitos o de más dígitos muestra cuales son con su cédula y la cantidad de dígitos que contiene">
                     <i class="bx bx-search-alt-2"></i>
                     <span>Verificar Rutas</span>
                 </button>
-                <button class="nav-link scrollto active item_menu" onclick="openModal_UploaderBajas()">
+                <button class="nav-link scrollto active item_menu" onclick="openModal_UploaderBajas()"
+                    title="Botón que abre una ventana que contiene un uploader en donde se cargan las bajas por morosidad">
                     <i class="bx bx-cloud-upload"></i>
                     <span>Uploader Bajas</span>
                 </button>
-                <button class="nav-link scrollto active item_menu" onclick="confirmar_corte_ABM()">
+                <button class="nav-link scrollto active item_menu" onclick="confirmar_corte_ABM()"
+                    title="Botón que muestra una ventana de confirmación, si esta se confirma, se ejecutan todas las acciones necesarias para realizar el Corte ABM">
                     <i class="bx bx-cut"></i>
                     <span>Corte ABM</span>
+                </button>
+                <button class="nav-link scrollto active item_menu" onclick="reportes_bajas()"
+                    title="Botón que abre una ventana que contiene los registros de bajas por morosidad y la cantidad de bajas realizadas este mes">
+                    <i class="bx bx-archive-in"></i>
+                    <span>Reporte Bajas</span>
                 </button>
                 <button class="nav-link scrollto active item_menu" onclick="cerrar_sesion()">
                     <i class="bx bx-lock"></i>

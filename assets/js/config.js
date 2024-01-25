@@ -24,7 +24,7 @@ const url_app_lib = PRODUCCION
 //URLs
 
 /******* CARGAR ARCHIVOS AL INDEX *******/
-const archivos_css = ["style"];
+const archivos_css = ["style", "estilos"];
 function loadStyles(_archivos = archivos_css) {
   _archivos.map((archivo) => {
     const s = document.createElement("link");

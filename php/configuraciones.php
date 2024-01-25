@@ -73,6 +73,7 @@ const TABLA_HISTORIAL_LOGS           = "historial_logs";
 const TABLA_LOGS_CORRECTOS           = "logs_correctos";
 const TABLA_LOGS_ERRORES             = "logs_errores";
 const TABLA_REGISTROS                = "registros";
+const TABLA_BAJAS_MOROSIDAD          = "bajas_morosidad";
 
 
 

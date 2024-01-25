@@ -1,0 +1,45 @@
+<!-- Modal -->
+<div class="modal fade" id="modal_reportesBajas" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+  aria-labelledby="modal_reportesBajas" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header bg-info">
+        <h1 class="modal-title fs-5 fw-bolder" id="modal_reportesBajas">Reportes Bajas</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+
+        <div class="table-responsive">
+          <table id="tabla_reporteBajasMorosidad" class="display" style="width:100%">
+            <thead class="bg-dark text-white">
+              <tr>
+                <th>#</th>
+                <th>Cédula</th>
+                <th>Fecha Carga</th>
+              </tr>
+            </thead>
+            <tbody class="table-bordered table-striped-columns">
+            </tbody>
+          </table>
+        </div>
+
+
+        <div class="list-group mt-5">
+          <button type="button" class="list-group-item list-group-item-action active" aria-current="true">
+            Total de bajas en el mes
+          </button>
+          <button type="button" class="list-group-item list-group-item-action">
+            Bajas por morosidad: <span class="fw-bolder" id="txt_cant_bajas_por_morosidad"></span>
+          </button>
+          <button type="button" class="list-group-item list-group-item-action">
+            Bajas cargadas directamente: <span class="fw-bolder" id="txt_cant_bajas_cargadas_directamente"></span>
+          </button>
+        </div>
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+      </div>
+    </div>
+  </div>
+</div>

@@ -3,7 +3,7 @@ $(document).ready(async function () {
   validarSesion();
 
   let partials = ["menu", "footer", "totalizador", "cierre_actual_x_servicios", "cierre_actual_x_promo"];
-  let modals = ["modalVerificarRutas", "modalUploaderBajas"];
+  let modals = ["modalVerificarRutas", "modalUploaderBajas", "modalReportesBajas"];
 
   for (let i in partials) {
     cargarPartial('partials', partials[i]);
@@ -164,3 +164,40 @@ function limpiarCampos() {
   vaciar_inputs(campos);
 }
 */
+
+function reportes_bajas() {
+  $("#modal_reportesBajas").modal("show");
+
+
+
+  $('#tabla_reporteBajasMorosidad').DataTable({
+    ajax: `${url_app_ajax}/reporte_bajas_morosidad.php`,
+    columns: [
+      { data: 'id' },
+      { data: 'cedula' },
+      { data: 'fecha_carga' },
+    ],
+    "order": [[0, 'asc']],
+    "bDestroy": true,
+    language: { url: '//cdn.datatables.net/plug-ins/1.13.4/i18n/es-ES.json' },
+    dom: 'Bfrtip',
+    buttons: ['excel'],
+  });
+
+
+  $.ajax({
+    type: "GET",
+    url: `${url_app_ajax}/reportes_bajas.php`,
+    dataType: "JSON",
+    success: function (response) {
+      if (response.error === false) {
+        let cantidad = response.cantidad;
+        $("#txt_cant_bajas_por_morosidad").text(cantidad.bajas_por_morosidad);
+        $("#txt_cant_bajas_cargadas_directamente").text(cantidad.bajas_cargadas_directamente);
+      } else {
+        error(response.mensaje);
+      }
+    }
+  });
+
+}
