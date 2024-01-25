@@ -1,6 +1,6 @@
 const PRODUCCION = true;
 
-const version = "1.0.8";
+const version = "1.0.9";
 const PROTOCOLO = "http";
 const SERVER = "192.168.1.250:82";
 const NAME_APP = "BD_Emision";
